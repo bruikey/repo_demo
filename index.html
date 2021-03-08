@@ -33,7 +33,7 @@
           padding: 20px 10px 10px 15px;
           text-decoration: none;
           font-size: 15px;
-          color: #818181;
+          color: white;
           display: block;
         }
         
@@ -45,7 +45,14 @@
             background-color: rgb(42, 44, 59);
             padding: 30px;
         }
-        
+        .button a{
+          text-decoration: none;
+            color: black;    
+        }
+
+        .button a:hover {
+          color: rgb(249, 174, 59);
+        }
         
         .main {
           margin-left: 200px; /* Same as the width of the sidenav */
@@ -57,6 +64,7 @@
           .sidenav {padding-top: 15px;}
           .sidenav a {font-size: 18px;}
         }
+     
         </style>
         </head>
         <body>
@@ -70,12 +78,37 @@
           <a href="#logout">LOGOUT</a>
         </div>
         
-        <div class="main">
-          <h1>Customer Details - Dharma Prakash</h1>
-          <h2 style="background-color:rgb(247,247,247)"><br>Personal Details</h2>
-          <p><br>Name &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Mobile Number &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Email Address <br>C DharmaPrakash &emsp;&emsp;&emsp; +91-9840318319</p>
-          <p>Scroll down the page to see the result.</p>
-        </div>
+        <div class="main"><br>
+          <h1><b>Customer Details - Dharma Prakash</b></h1><br><br>
+          <h2 style="background-color:rgb(247,247,247)"><br><b>Personal Details</b></h2>
+          <p contenteditable="true"><br><b>Name</b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>Mobile Number</b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>Email Address</b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>DOB</b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;<b>Sex</b>  
+          <br>C DharmaPrakash &emsp;&emsp;&emsp; +91-9840318319 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; dharma@gmail.com &emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;&thinsp; 23-jan-1977 &emsp;&emsp;&emsp;&emsp;&emsp; Male</p>
+
+          <p contenteditable="true"><br><b>Address</b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>Internal Notes</b>
+          <br>Old No 9, New No 5, Chinnaiaya Steer, T &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;&thinsp;&thinsp;&thinsp; Any information about the customer only for
+          <br>Nagar, Chennai 600017 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; internal view</p>
+          <h2 style="background-color:rgb(247,247,247)"><br><b>Subscriptions(Trial, New, Renewal)</b></h2>
+          <div class="button Dropdown ">
+            
+            <a href="#all">ALL</a> &emsp;&emsp;
+            <a href="#trial">TRIAL</a>&emsp;&emsp;
+            <a href="#new">NEW</a>&emsp;&emsp;
+            <a href="#renewal">RENEWAL</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Status
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">PENDING
+              <ul class="dropdown-menu">
+                <li><a href="#">COMPLETED</a></li>
+                <li><a href="#">TERMINATED</a></li>
+              </ul>
+            
+          </div>
+          <p contenteditable="true"><br><b>Program &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Address &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Schedule &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Status &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Fee 
+            &emsp;&emsp;&emsp;&emsp;Created</b> &emsp;&emsp;&emsp;<br>Core Training &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp; Old No 5, New NO 9, &emsp;&emsp;&emsp; - &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp; Pending
+            &emsp;&emsp;&emsp;&thinsp;&thinsp;&emsp;&emsp;&emsp;Nil &thinsp;&thinsp;&emsp;&emsp;&emsp;&emsp;20-May-2018
+            <br>&thinsp;&thinsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;Chinnai St,<br>&thinsp;&thinsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;T Nagar, Chennai 60017</p>
+            <p contenteditable="true"><br><b>Additional Notes</b> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <b>Internal Notes</b>
+              <br>Any Information visible to the customer &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp; Any information about the customer only for
+              <br>Nagar, Chennai 600017 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;&thinsp; internal view</p>
+         </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
